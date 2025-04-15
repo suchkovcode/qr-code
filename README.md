@@ -77,7 +77,7 @@
 
 ```bash
 # Клонирование репозитория
-git clone https://github.com/yourusername/findmystuff-qr.git
+git clone https://github.com/suchkovcode/qr-code
 cd findmystuff-qr
 
 # Установка зависимостей
