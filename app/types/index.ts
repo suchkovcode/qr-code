@@ -69,3 +69,8 @@ export interface QROptions {
    };
    image?: string;
 }
+
+export interface DownloadOptions {
+   name: string;
+   extension: string;
+}

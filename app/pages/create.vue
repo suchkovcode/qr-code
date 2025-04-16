@@ -145,7 +145,7 @@
 </template>
 
 <script setup lang="ts">
-import type { QRData, QRStyle, QRColor, QRLogo, QROptions } from "@/types";
+import type { QRData, QRStyle, QRColor, QRLogo, QROptions, DownloadOptions } from "@/types";
 import { X, Download, FileText, Loader2 } from "lucide-vue-next";
 import { useToast } from "@/components/ui/toast";
 import QRCodeStyling from "qr-code-styling";
@@ -317,11 +317,6 @@ const handleQuickCreate = async (): Promise<void> => {
       isCreating.value = false;
    }
 };
-
-interface DownloadOptions {
-   name: string;
-   extension: string;
-}
 
 const downloadQRCode = (fileType: "png" | "svg" | "pdf"): void => {
    try {
